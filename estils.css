@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+.caixa-avis {
+    background-color: #dbeafe;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #cbd5e1;
+}
+
+#capcalera {
+    text-align: center;
+    color: white;
+    background-color: #0f172a;
+    padding: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#contingut {
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.fitxa {
+    background-color: white;
+    border: 2px solid #cbd5e1;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.etiqueta-inline {
+    display: inline-block;
+    background-color: #e2e8f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+}
+
+#contingut > section {
+    background-color: white;
+    padding: 25px;
+}
+
+h2 + p {
+    font-weight: bold;
+    color: #0284c7;
+}
+
+h2 ~ p {
+    font-size: 1.05rem;
+}
+
+a[target="_blank"] {
+    color: #15803d;
+    font-weight: bold;
+}
+
+a[href$=".pdf"] {
+    color: #b91c1c;
+}
+
+.menu a:hover {
+    background-color: #334155;
+    border-radius: 6px;
+}
+
+.fitxa:last-child {
+    margin-bottom: 0;
+    border-left: 6px solid #0284c7;
+}
+
+.fitxa h3::before {
+    content: "▸ ";
+    color: #0284c7;
+}
+
+a[href$=".pdf"]::after {
+    content: " [PDF]";
+}
+
+.intro::first-letter {
+    font-size: 1.5rem;
+    color: #0284c7;
+}
+/* Pregunta de reflexió */
+
+/*
+La caixa .caixa-avis mostra el color de fons #fee2e2 del archiu html
+perquè l'estil inline té més prioritat que l'intern
+i que l'extern dins de la cascada CSS.
+Si afegíssim !important al fitxer extern, aquesta tindria prioritat sobre
+els estils normals i podria substituir el color definit
+a l'estil inline.
+*/
